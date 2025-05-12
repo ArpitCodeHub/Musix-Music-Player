@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musix - Web Music Player</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-container chewy-regular">
+        <!-- Music Player Section -->
+        <div class="music-player glass">
+            <h1 style="font-size: 80px; text-shadow: 2px 2px 5px rgb(0, 213, 255)">Musix</h1>
+            
+            <!-- Album Cover -->
+            <div class="album-card">
+                <img id="album-cover" src="assets/cover-imgs/Pal-Pal-Cover.jpg" alt="Album Cover" class="album-cover">
+            </div>
+
+            <!-- Song Title -->
+            <h1 id="track-name">Song Name</h1>
+
+            <!-- Audio Element -->
+            <audio id="audio-player" src="assets/songs/Pal Pal.mp3"></audio>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="prev" class="bubbly chewy-regular">⏮ Previous</button>
+                <button id="playPause" class="bubbly chewy-regular">▶ Play</button>
+                <button id="next" class="bubbly chewy-regular">⏭ Next</button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- Right-Aligned Playlist Section -->
+        <div class="playlist-container glass">
+            <h1>Playlist</h1>
+            <ul id="playlist"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
