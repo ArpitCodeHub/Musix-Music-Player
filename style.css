@@ -27,6 +27,7 @@ body{
     margin-left: 43%;
     box-shadow: 0px 0px 10px rgb(80, 80, 80);
     cursor: pointer;
+    animation: popOut 2s ease-out;
 }
 
 #start-btn:hover{
