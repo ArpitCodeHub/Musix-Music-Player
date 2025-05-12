@@ -146,4 +146,7 @@ body {
     .playlist-container {
         visibility: hidden;
     }
+    body{
+        overflow-y: visible;
+    }
 }
